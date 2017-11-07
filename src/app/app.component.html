@@ -1,0 +1,33 @@
+<mat-sidenav-container>
+	<mat-sidenav #sidenav>Drawer content</mat-sidenav>
+	<div class="my-content">
+		<mat-toolbar color="primary"  class="main-toolbar">
+  <button mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div>
+    <h1 i18n="@@introductionHeader">Angular Material Demos</h1>
+    <nav>
+	    <a routerLink="/application" routerLinkActive="active">application</a>
+	    <a routerLink="/dashboard/1" routerLinkActive="active">dashboard</a>
+	  </nav>
+	</div>
+  <mat-toolbar-row>
+    <span>Second Line</span>
+    <span class="example-spacer"></span>
+    <mat-icon class="example-icon">verified_user</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<div class="router-content">
+	<router-outlet>
+		
+	</router-outlet>
+	
+		
+</div>
+	</div>
+</mat-sidenav-container>
+  
+  
